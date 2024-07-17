@@ -1541,6 +1541,22 @@ input[type=number] {
   .item-4x .item .text h6 a:hover {
     opacity: 0.7; }
 
+.strains-slider .swiper-slide figure {
+  background: #000; }
+
+.title-slider .nav-wrap > div {
+  background: #000;
+  z-index: 10; }
+
+.title-slider .nav-wrap:after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  content: '';
+  background: #000; }
+
 /*-----------------------------END-PAGE-ABOUT-------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
