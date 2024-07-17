@@ -1517,5 +1517,30 @@ input[type=number] {
         .about .video-wrap a .play:hover {
           background: #fff; }
 
+.strains-slider .swiper-slide .text h6 a, .product-slider .swiper-slide .text h6 a {
+  float: inherit;
+  color: #6fd4de; }
+  .strains-slider .swiper-slide .text h6 a:hover, .product-slider .swiper-slide .text h6 a:hover {
+    opacity: 0.7; }
+
+.strains-slider .swiper-slide figure, .item-4x .item figure, .product-slider .swiper-slide figure {
+  overflow: hidden; }
+  .strains-slider .swiper-slide figure img, .item-4x .item figure img, .product-slider .swiper-slide figure img {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-transform-origin: center;
+            transform-origin: center; }
+  .strains-slider .swiper-slide figure a:hover img, .item-4x .item figure a:hover img, .product-slider .swiper-slide figure a:hover img {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
+
+.item-4x .item .text h6 a {
+  position: inherit;
+  color: #6fd4de;
+  float: inherit; }
+  .item-4x .item .text h6 a:hover {
+    opacity: 0.7; }
+
 /*-----------------------------END-PAGE-ABOUT-------------------------------*/
+
 /*# sourceMappingURL=styles.css.map */

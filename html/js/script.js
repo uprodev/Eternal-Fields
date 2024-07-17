@@ -1,11 +1,13 @@
 jQuery(document).ready(function ($) {
 
   /*mac or pc*/
+/*
   if (navigator.userAgent.indexOf('Mac OS X') != -1) {
     $("body").addClass("mac");
   } else {
     $("body").addClass("pc");
   }
+*/
 
   //scroll
   $(document).on('click', '.scroll', function (e) {
