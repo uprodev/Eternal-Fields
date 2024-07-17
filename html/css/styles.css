@@ -1542,7 +1542,7 @@ input[type=number] {
     opacity: 0.7; }
 
 .strains-slider .swiper-slide figure {
-  background: #000; }
+  background: rgba(0, 0, 0, 0.9); }
 
 .title-slider .nav-wrap > div {
   background: #000;
@@ -1561,4 +1561,5 @@ input[type=number] {
   min-width: calc(100% - 204px); }
 
 /*-----------------------------END-PAGE-ABOUT-------------------------------*/
+
 /*# sourceMappingURL=styles.css.map */
