@@ -1557,6 +1557,8 @@ input[type=number] {
   content: '';
   background: #000; }
 
-/*-----------------------------END-PAGE-ABOUT-------------------------------*/
+.contact .form-default .input-wrap textarea {
+  min-width: calc(100% - 204px); }
 
+/*-----------------------------END-PAGE-ABOUT-------------------------------*/
 /*# sourceMappingURL=styles.css.map */

@@ -641,6 +641,9 @@
     padding: 0 15px; }
 
   .about .video-wrap a {
-    height: 60vw; } }
+    height: 60vw; }
+
+  .contact .form-default .input-wrap textarea {
+    min-width: calc(100% - 204px); } }
 
 /*# sourceMappingURL=responsive.css.map */
