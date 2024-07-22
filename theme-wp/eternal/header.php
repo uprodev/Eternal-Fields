@@ -19,9 +19,14 @@
     <div class="top-line">
         <div class="content-width">
             <div class="logo-wrap">
-                <a href="index.html">
-                    <img src="img/logo.svg" alt="">
+
+                <?php $logo = get_field('logo', 'options');?>
+                <a href="<?= get_home_url();?>">
+                    <?php if($logo):?>
+                        <img src="<?= $logo['url'];?>" alt="<?= $logo['alt'];?>">
+                    <?php endif;?>
                 </a>
+                
             </div>
             <nav class="top-menu">
                 <ul>
