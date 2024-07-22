@@ -14,32 +14,6 @@ $id = get_the_ID();
 
 <?php endif; ?>
 
-<section class="home-banner">
-    <div class="bg">
-        <img src="img/bg-1.jpg" alt="">
-    </div>
-    <div class="content-width">
-        <div class="content">
-            <div class="title-wrap">
-                <h1>Welcome to Eternal Fields</h1>
-            </div>
-            <div class="text">
-                <p>At Eternal Fields, we're dedicated to unlocking the ancient wonders of cannabis, meticulously cultivated to enhance your well-being and inspire your spirit. Our commitment to purity, sustainability, and innovation guides every step from seed to sale.</p>
-            </div>
-            <div class="bottom-title">
-                <h2>Discover Nature's Finest Cannabis</h2>
-            </div>
-        </div>
-        <div class="bottom-scroll">
-            <a href="#section1" class="scroll">Scroll down</a>
-        </div>
-        <div class="icon-wrap">
-            <img src="img/icon-1.svg" alt="">
-        </div>
-    </div>
-
-</section>
-
 
 <section id="section1" class="title-slider">
     <div class="content-width">

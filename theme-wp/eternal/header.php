@@ -26,7 +26,7 @@
                         <img src="<?= $logo['url'];?>" alt="<?= $logo['alt'];?>">
                     <?php endif;?>
                 </a>
-                
+
             </div>
             <nav class="top-menu">
                 <ul>
