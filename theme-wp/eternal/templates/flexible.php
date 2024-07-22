@@ -189,8 +189,6 @@ $id = get_the_ID();
     </div>
 </section>
 
-
-
 <section class="title-bg-text">
     <div class="content-width">
         <div class="title-wrap">
