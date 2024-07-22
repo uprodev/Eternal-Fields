@@ -29,12 +29,13 @@
 
             </div>
             <nav class="top-menu">
-                <ul>
-                    <li ><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">WHERE TO BUY</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                </ul>
+
+                <?php wp_nav_menu([
+                    'theme_location' => 'main-menu',
+                    'container' => false,
+                    'menu_class' => '',
+                ]);?>
+
             </nav>
         </div>
     </div>

@@ -4,22 +4,28 @@
 <footer>
     <div class="content-width">
         <div class="logo-wrap">
-            <a href="index.html">
-                <img src="img/logo-2.svg" alt="">
+            <?php $logo = get_field('footer_logo', 'options');?>
+            <a href="<?= get_home_url();?>">
+                <?php if($logo):?>
+                    <img src="<?= $logo['url'];?>" alt="<?= $logo['alt'];?>">
+                <?php endif;?>
             </a>
         </div>
         <nav class="top-menu">
-            <ul>
-                <li><a href="#">PRODUCTS</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">WHERE TO BUY</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
+            <?php wp_nav_menu([
+                'theme_location' => 'foot-menu',
+                'container' => false,
+                'menu_class' => '',
+            ]);?>
         </nav>
 
-        <div class="bottom">
-            <p>© Copyright Eternal Fields LLC. 2024</p>
-        </div>
+        <?php $copy = get_field('copyright_text', 'options');
+
+        if($copy):?>
+            <div class="bottom">
+                <p><?= $copy;?></p>
+            </div>
+        <?php endif;?>
     </div>
 </footer>
 
