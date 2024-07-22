@@ -17,26 +17,352 @@
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+get_header();?>
 
-/**
- * Hook: woocommerce_before_main_content.
- *
- * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
- * @hooked woocommerce_breadcrumb - 20
- * @hooked WC_Structured_Data::generate_website_data() - 30
- */
-do_action( 'woocommerce_before_main_content' );
+    <div class="nav-block">
+        <div class="content-width">
+            <div class="nav-menu-wrap">
+                <ul class="et_pb_side_nav ">
+                    <li class="side_nav_item"><a href="#product1"><span class="img-wrap"><img src="img/icon-5.svg" alt=""></span>FLOWER</a></li>
+                    <li class="side_nav_item"><a href="#product2"  class=""><span class="img-wrap"><img src="img/icon-5.svg" alt=""></span>pre-rolls</a></li>
+                    <li class="side_nav_item"><a href="#product3" id="side_nav_item_id_2" class=""><span class="img-wrap"><img src="img/icon-5.svg" alt=""></span>Edibles</a></li>
+                    <li class="side_nav_item"><a href="#product4" id="side_nav_item_id_3" class=""><span class="img-wrap"><img src="img/icon-5.svg" alt=""></span>concentrates</a></li>
 
-/**
- * Hook: woocommerce_shop_loop_header.
- *
- * @since 8.6.0
- *
- * @hooked woocommerce_product_taxonomy_archive_header - 10
- */
-do_action( 'woocommerce_shop_loop_header' );
+                </ul>
+            </div>
+            <div class="content-wrap">
+                <section class="product-head">
+                    <div class="title-wrap">
+                        <div class="icon-wrap">
+                            <img src="img/icon-6.svg" alt="">
+                        </div>
+                        <h1><span>Our</span> Strains</h1>
+                        <p>Explore handpicked strains and embrace the quality you deserve. From invigorating sativas to soothing indicas and balanced hybrids, there's something special for every moment.</p>
+                    </div>
+                </section>
 
+
+                <section id="product1" class="product product-1">
+                    <div class="title">
+                        <p>10 items</p>
+                        <h2>FLOWER</h2>
+                    </div>
+                    <div class="slider-wrap">
+                        <div class="nav-wrap">
+                            <div class="swiper-button-next next-1 arrow"></div>
+                            <div class="swiper-button-prev prev-1 arrow"></div>
+                            <div class="link-wrap">
+                                <a href="#">View all</a>
+                            </div>
+                        </div>
+                        <div class="swiper product-slider-1  product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="product2" class="product product-2">
+                    <div class="title">
+                        <p>10 items</p>
+                        <h2>pre-rolls</h2>
+                    </div>
+                    <div class="slider-wrap">
+                        <div class="nav-wrap">
+                            <div class="swiper-button-next next-2 arrow"></div>
+                            <div class="swiper-button-prev prev-2 arrow"></div>
+                            <div class="link-wrap">
+                                <a href="#">View all</a>
+                            </div>
+                        </div>
+                        <div class="swiper product-slider-2  product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-7-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-7-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="product3" class="product product-3">
+                    <div class="title">
+                        <p>10 items</p>
+                        <h2>Edibles</h2>
+                    </div>
+                    <div class="slider-wrap">
+                        <div class="nav-wrap">
+                            <div class="swiper-button-next next-3 arrow"></div>
+                            <div class="swiper-button-prev prev-3 arrow"></div>
+                            <div class="link-wrap">
+                                <a href="#">View all</a>
+                            </div>
+                        </div>
+                        <div class="swiper product-slider-3  product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-8-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-8-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="product4" class="product product-4">
+                    <div class="title">
+                        <p>10 items</p>
+                        <h2>concentrates</h2>
+                    </div>
+                    <div class="slider-wrap">
+                        <div class="nav-wrap">
+                            <div class="swiper-button-next next-4 arrow"></div>
+                            <div class="swiper-button-prev prev-4 arrow"></div>
+                            <div class="link-wrap">
+                                <a href="#">View all</a>
+                            </div>
+                        </div>
+                        <div class="swiper product-slider-4  product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-9-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-9-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#">	<img src="img/img-2-1.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Bananaconda #4</a></h6>
+                                        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-2.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Strawberry Runtz</a></h6>
+                                        <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <a href="#"><img src="img/img-2-3.png" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <h6><a href="#">Cadillac Rainbows</a></h6>
+                                        <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
+                                        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+<?php
 if ( woocommerce_product_loop() ) {
 
 	/**
@@ -80,18 +406,7 @@ if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_no_products_found' );
 }
 
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action( 'woocommerce_after_main_content' );
 
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
+get_template_part('parts/join-products');
 
-get_footer( 'shop' );
+get_footer();

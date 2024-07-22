@@ -9,7 +9,7 @@ $form = get_field('form_join', 'options');
 ?>
 
 <section class="join<?= !$bg?'':' join-blue';?>">
-    <?php if($bg):
+    <?php if(!$bg):
         if($image):?>
             <div class="bg">
                 <img src="<?= $image['url'];?>" alt="<?= $image['alt'];?>">
@@ -34,7 +34,7 @@ $form = get_field('form_join', 'options');
 
         </div>
         <div class="title-wrap">
-            <?php if(!$bg):
+            <?php if($bg):
                 if($image):?>
                     <div class="bg">
                         <img src="<?= $image['url'];?>" alt="<?= $image['alt'];?>">
@@ -55,3 +55,4 @@ $form = get_field('form_join', 'options');
         </div>
     </div>
 </section>
+
