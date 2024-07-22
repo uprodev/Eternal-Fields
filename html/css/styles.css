@@ -1560,6 +1560,27 @@ input[type=number] {
 .contact .form-default .input-wrap textarea {
   min-width: calc(100% - 204px); }
 
+.home-banner .icon-wrap img, .img-text-bg .icon-wrap img, .product-head .title-wrap .icon-wrap img {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-animation: rotate 15s linear infinite;
+          animation: rotate 15s linear infinite; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 /*-----------------------------END-PAGE-ABOUT-------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
