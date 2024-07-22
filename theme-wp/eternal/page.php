@@ -1,7 +1,15 @@
 <?php 
 
-get_header(); 
+get_header();
 
-	get_template_part('templates/flexible');
+    if(is_woocommerce()){
+
+        the_content();
+
+    }else {
+
+        get_template_part('templates/flexible');
+
+    }
 
 get_footer();
