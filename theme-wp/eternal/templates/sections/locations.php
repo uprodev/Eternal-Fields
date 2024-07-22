@@ -1,10 +1,10 @@
 <?php
 
-
+$rid = get_row_index();
 
 ?>
 
-<section class="section-map">
+<section id="section<?= $rid;?>"  class="section-map">
     <div class="bg">
         <img src="<?= get_template_directory_uri();?>/img/bg-4.jpg" alt="">
     </div>

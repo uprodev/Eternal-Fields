@@ -1,13 +1,14 @@
 <?php
 
-$image = get_sub_field('image');
+$image = get_sub_field('background');
 $title = get_sub_field('title');
 $text = get_sub_field('text');
 $form = get_sub_field('form');
+$rid = get_row_index();
 
 ?>
 
-<section class="join">
+<section id="section<?= $rid;?>" class="join">
     <?php if($image):?>
         <div class="bg">
             <img src="<?= $image['url'];?>" alt="<?= $image['alt'];?>">
