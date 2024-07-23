@@ -23,14 +23,15 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+$img = get_field('second_image');
 ?>
 <div class="swiper-slide">
     <figure>
-        <a href="#"><img src="img/img-2-1.png" alt=""></a>
+        <a href="<?php the_permalink();?>"><img src="<?= $img?$img['url']:get_the_post_thumbnail_url();?>" alt=""></a>
     </figure>
     <div class="text">
-        <h6><a href="#">Bananaconda #4</a></h6>
-        <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
-        <a href="#"><img src="img/icon-2.svg" alt=""></a>
+        <h6><a href="<?php the_permalink();?>"><?php the_title();?></a></h6>
+        <p><?php the_excerpt();?></p>
+        <a href="<?php the_permalink();?>"><img src="<?= get_template_directory_uri();?>/img/icon-2.svg" alt=""></a>
     </div>
 </div>

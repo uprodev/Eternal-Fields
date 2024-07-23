@@ -30,7 +30,7 @@ $text = get_sub_field('text');
                     <?php endif;?>
 
                     <?= $text;?>
-                    
+
                 </div>
             </section>
 
