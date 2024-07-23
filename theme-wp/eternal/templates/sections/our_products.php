@@ -51,30 +51,32 @@ $text = get_sub_field('text');
                 ?>
                 <section id="product<?= $i;?>" class="product product-<?= $i;?>">
                     <div class="title">
-                        <p><?= $count;?> items</p>
+                        <?= $count>0?'<p>'.$count.' '.__('items', 'eternal').'</p>':'';?>
                         <h2><?= $cat->name;?></h2>
                     </div>
-                    <div class="slider-wrap">
-                        <div class="nav-wrap">
-                            <div class="swiper-button-next next-<?= $i;?> arrow"></div>
-                            <div class="swiper-button-prev prev-<?= $i;?> arrow"></div>
-                            <div class="link-wrap">
-                                <a href="<?= get_term_link($cat->term_id);?>"><?= __('View all', 'eternal');?></a>
+                    <?php if($prods->have_posts()):?>
+                        <div class="slider-wrap">
+                            <div class="nav-wrap">
+                                <div class="swiper-button-next next-<?= $i;?> arrow"></div>
+                                <div class="swiper-button-prev prev-<?= $i;?> arrow"></div>
+                                <div class="link-wrap">
+                                    <a href="<?= get_term_link($cat->term_id);?>"><?= __('View all', 'eternal');?></a>
+                                </div>
+                            </div>
+                            <div class="swiper product-slider-<?= $i;?>  product-slider">
+                                <div class="swiper-wrapper">
+                                    <?php while($prods->have_posts()): $prods->the_post();
+
+                                        wc_get_template_part( 'content', 'product' );
+
+                                    endwhile;
+
+                                    wp_reset_postdata();?>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper product-slider-<?= $i;?>  product-slider">
-                            <div class="swiper-wrapper">
-                                <?php while($prods->have_posts()): $prods->the_post();
-
-                                    wc_get_template_part( 'content', 'product' );
-
-                                endwhile;
-
-                                wp_reset_postdata();?>
-
-                            </div>
-                        </div>
-                    </div>
+                    <?php endif;?>
                 </section>
             <?php $i++; endforeach;?>
         </div>

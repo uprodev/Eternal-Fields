@@ -24,7 +24,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 $img = get_field('card_image');
-$short = wpautop($product->short_description());
+$short = wpautop($product->get_short_description());
 
 ?>
 <div class="swiper-slide">
