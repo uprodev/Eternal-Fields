@@ -27,6 +27,7 @@ $rid = get_row_index();
             <div class="slider-wrap">
                 <div class="swiper strains-slider">
                     <div class="swiper-wrapper">
+
                         <?php foreach($slider as $sli):
                             $img = $sli['image'];
                             $text = $sli['description'];
@@ -50,56 +51,7 @@ $rid = get_row_index();
                                 </div>
                             </div>
                         <?php endforeach;?>
-                        <div class="swiper-slide">
-                            <figure>
-                                <a href="#"><img src="img/img-2-2.png" alt=""></a>
-                            </figure>
-                            <div class="text">
-                                <h6><a href="#">Strawberry Runtz</a></h6>
-                                <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
-                                <a href="#"><img src="img/icon-2.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <a href="#"><img src="img/img-2-3.png" alt=""></a>
-                            </figure>
-                            <div class="text">
-                                <h6><a href="#">Cadillac Rainbows</a></h6>
-                                <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
-                                <a href="#"><img src="img/icon-2.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <a href="#"><img src="img/img-2-1.png" alt=""></a>
-                            </figure>
-                            <div class="text">
-                                <h6><a href="#">Bananaconda #4</a></h6>
-                                <p>The fruity, creamy, earthy scent of Bananaconda #4 brings about a blissful blend of happiness, energy, and relaxation.</p>
-                                <a href="#"><img src="img/icon-2.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <a href="#"><img src="img/img-2-2.png" alt=""></a>
-                            </figure>
-                            <div class="text">
-                                <h6><a href="#"></a></h6>
-                                <p>The sweet and earthy smell of Strawberry Runtz fills the air, inducing euphoric, creative, and happy effects.</p>
-                                <a href="#"><img src="img/icon-2.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <a href="#"><img src="img/img-2-3.png" alt=""></a>
-                            </figure>
-                            <div class="text">
-                                <h6><a href="#">Cadillac Rainbows</a></h6>
-                                <p>The fruity, gassy aroma of Cadillac Rainbows invites a wave of hunger, euphoria, and relaxation.</p>
-                                <a href="#"><img src="img/icon-2.svg" alt=""></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
