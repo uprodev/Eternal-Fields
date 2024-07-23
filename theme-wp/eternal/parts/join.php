@@ -8,7 +8,7 @@ $form = get_field('form_join', 'options');
 
 ?>
 
-<section class="join<?= !$bg?'':' join-blue';?>">
+<section class="join<?= !$bg?' join-blue':'';?>">
     <?php if($bg):
         if($image):?>
             <div class="bg">
