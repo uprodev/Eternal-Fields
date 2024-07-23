@@ -59,7 +59,7 @@ $text = get_sub_field('text');
                             <div class="swiper-button-next next-<?= $i;?> arrow"></div>
                             <div class="swiper-button-prev prev-<?= $i;?> arrow"></div>
                             <div class="link-wrap">
-                                <a href="<?= get_term_link($cat->term_id);?>">View all</a>
+                                <a href="<?= get_term_link($cat->term_id);?>"><?= __('View all', 'eternal');?></a>
                             </div>
                         </div>
                         <div class="swiper product-slider-<?= $i;?>  product-slider">

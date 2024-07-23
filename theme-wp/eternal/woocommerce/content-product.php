@@ -24,6 +24,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 $img = get_field('card_image');
+$short = wpautop($product->short_description());
+
 ?>
 <div class="swiper-slide">
     <figure>
@@ -31,7 +33,7 @@ $img = get_field('card_image');
     </figure>
     <div class="text">
         <h6><a href="<?php the_permalink();?>"><?= strip_tags(get_the_title());?></a></h6>
-        <p><?php the_excerpt();?></p>
+        <?= $short?$short:wpautop(get_the_excerpt());?>
         <a href="<?php the_permalink();?>"><img src="<?= get_template_directory_uri();?>/img/icon-2.svg" alt=""></a>
     </div>
 </div>
