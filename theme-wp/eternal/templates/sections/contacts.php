@@ -25,12 +25,12 @@ $rid = get_row_index();
                 <p><?= $text;?></p>
             <?php endif;?>
 
-            <?php if($form):?>
-                <div class="form-default">
-                    <?= do_shortcode('[contact-form-7 id="'.$form.'"]');?>
-                </div>
-            <?php endif;?>
-            
+            <?php if($form) {
+
+                echo do_shortcode('[contact-form-7 id="' . $form . '"]');
+
+            }?>
+
         </div>
     </div>
 </section>
