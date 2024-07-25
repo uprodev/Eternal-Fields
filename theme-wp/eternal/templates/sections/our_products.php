@@ -1,6 +1,6 @@
 <?php
 
-$cats = get_terms(['taxonomy'=>'product_cat', 'hide_empty'=>false, 'exclude' => 15]);
+$cats = get_terms(['taxonomy'=>'category_product', 'hide_empty'=>false, 'exclude' => 15]);
 $i=1;
 
 $image = get_sub_field('icon');
@@ -36,11 +36,11 @@ $text = get_sub_field('text');
 
             <?php foreach($cats as $cat):
                 $prods = new WP_Query([
-                    'post_type' => 'product',
+                    'post_type' => 'products',
                     'posts_per_page' => -1,
                     'tax_query' => [
                         [
-                            'taxonomy' => 'product_cat',
+                            'taxonomy' => 'category_product',
                             'field' => 'id',
                             'terms' => $cat->term_id
                         ]
@@ -67,7 +67,7 @@ $text = get_sub_field('text');
                                 <div class="swiper-wrapper">
                                     <?php while($prods->have_posts()): $prods->the_post();
 
-                                        wc_get_template_part( 'content', 'product' );
+                                        get_template_part( 'parts/product' );
 
                                     endwhile;
 
