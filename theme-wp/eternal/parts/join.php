@@ -5,6 +5,7 @@ $image = get_field('image_join', 'options');
 $title = get_field('title_join', 'options');
 $text = get_field('text_join', 'options');
 $form = get_field('form_join', 'options');
+$insta = get_field('instagram_shortcode', 'options');
 
 ?>
 
@@ -42,7 +43,9 @@ $form = get_field('form_join', 'options');
                 <?php endif;
             endif;?>
             <div class="wrap">
-                <?= do_shortcode('[instagram-feed feed=1]');?>
+                <?php if($insta){
+                    echo do_shortcode(''.$insta.'');
+                }?>
             </div>
         </div>
     </div>

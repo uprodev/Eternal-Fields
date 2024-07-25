@@ -5,6 +5,7 @@ $image = get_field('image_join', 'options');
 $title = get_field('title_join', 'options');
 $text = get_field('text_join', 'options');
 $form = get_field('form_join', 'options');
+$insta = get_field('instagram_shortcode', 'options');
 
 ?>
 
@@ -42,15 +43,9 @@ $form = get_field('form_join', 'options');
                 <?php endif;
             endif;?>
             <div class="wrap">
-                <div class="img-wrap">
-                    <img src="<?= get_template_directory_uri();?>/img/img-6-1.jpg" alt="">
-                    <img src="<?= get_template_directory_uri();?>/img/img-6-2.jpg" alt="">
-                    <img src="<?= get_template_directory_uri();?>/img/img-6-3.jpg" alt="">
-                </div>
-                <h2>Stay Informed and Inspired</h2>
-                <div class="btn-wrap">
-                    <a href="#" class="btn-arrow">check our insta <img src="<?= get_template_directory_uri();?>/img/arrow-1.svg" alt=""></a>
-                </div>
+                <?php if($insta){
+                    echo do_shortcode(''.$insta.'');
+                }?>
             </div>
         </div>
     </div>

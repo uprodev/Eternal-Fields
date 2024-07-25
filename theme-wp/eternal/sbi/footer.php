@@ -23,8 +23,14 @@ $load_button_text = __( $settings['buttontext'], 'instagram-feed' );
 
 $footer_attributes   = SB_Instagram_Display_Elements::get_footer_attributes( $settings );
 
+$insta_title = get_field('instagram_title', 'options');
+
 ?>
-<h2>Stay Informed and Inspired</h2>
+
+<?php if($insta_title):?>
+    <h2><?= $insta_title;?></h2>
+<?php endif;?>
+
 <div class="btn-wrap">
 
 	<a class="btn-arrow" <?php echo SB_Instagram_Display_Elements::get_header_link( $settings, $first_username ) ?> target="_blank" rel="nofollow noopener">

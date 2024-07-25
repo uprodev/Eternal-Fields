@@ -5,6 +5,7 @@ $image = get_sub_field('background');
 $title = get_sub_field('title');
 $text = get_sub_field('text');
 $form = get_sub_field('form');
+$insta = get_sub_field('instagram_shortcode');
 $rid = get_row_index();
 
 ?>
@@ -44,7 +45,9 @@ $rid = get_row_index();
             endif;?>
             <?= !$bg?'<div class="wrap">':'';?>
 
-                <?= do_shortcode('[instagram-feed feed=1]');?>
+                <?php if($insta){
+                    echo do_shortcode(''.$insta.'');
+                }?>
 
             <?= !$bg?'</div>':'';?>
         </div>
