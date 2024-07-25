@@ -24,7 +24,7 @@ $rid = get_row_index();
         </div>
 
         <div class="content-map">
-            <img src="<?= get_template_directory_uri();?>/img/map.jpg" alt="">
+            <?= do_shortcode('[wpgmza id="1"]');?>
         </div>
         <div class="map-info">
             <div class="item">
