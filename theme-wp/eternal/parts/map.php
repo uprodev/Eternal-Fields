@@ -59,6 +59,6 @@ $locations = get_field('locations', 'options');
                 <?php endforeach;?>
             </div>
         <?php endif;?>
-        
+
     </div>
 </section>
